@@ -5,5 +5,18 @@
   <body>
     <h1>AWS Connect Web Client</h1>
     <h2>For Demo purposes only</h2>
+    <script type="text/javascript">
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://ivan-aws-free.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', 'd6933de4-9d35-4124-8e46-feec4370d009');
+  amazon_connect('styles', { iconType: 'CHAT_VOICE', openChat: { color: '#ffffff', backgroundColor: '#123456' }, closeChat: { color: '#ffffff', backgroundColor: '#123456'} });
+  amazon_connect('snippetId', 'QVFJREFIZ3JjM0V2VVBOckdYcW1jeFRyRHU0N1IwL0hXQXhoMlF6RE5FSm4wc01nUUFIWmg5eXZaU3czSG44Q2U5bHlyVnNBQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNYm1wc1ZzcDViSG5UUkF2M0FnRVFnQ3RoRVJVeC9Sb3Bvb2RjU0hOVGwxRHpTNFk5QWhHa01lKzhWcmJvb1ZZYUdTV3g5MlhpdVJyWTFaZjc6OjExNHczVHljeHQvNSs1WTBNV3l3MUNHUjI2b21pNHAxeUhMSWljS0VXZXNxbzc5ME1vOVNORGFMVW50Y3Izd0JtdTQzRElOZlI0SjJTT0JFRm1ZTzNwdGdKT1RBNlpPbTN3VFVvcGVKdFdLQmo5RTNYckRiY2I3Znl1MnBCQmt2djVWVld4c2szeGpCUzM3OU9KRVdDcjJTNDZuMGZmZz0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+</script>
   </body>
 </html>

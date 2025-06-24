@@ -17,7 +17,7 @@ now = datetime.now(timezone.utc)
 payload = {
 'sub': widgetId, # don't add single quotes, such as 'widgetId'
 'iat': now,
-'exp': now + timedelta(days=365),
+'exp': now + timedelta(hours=2),
 'token_user': 'usak'
 }
 

@@ -23,7 +23,7 @@ payload = {
 
 header = {
 'typ': "JWT",
-'alg': 'HS256'
+'alg': JWT_ALGORITHM
 }
 
 encoded_token = jwt.encode((payload), CONNECT_SECRET, algorithm=JWT_ALGORITHM, headers=header)

@@ -9,13 +9,16 @@ CONNECT_SECRET = os.getenv('CONNECT_SECRET')
 if not CONNECT_SECRET:
     raise ValueError('CONNECT_SECRET is not set')
 
+WIDGET_ID= os.getenv('WIDGET_ID')
+if not WIDGET_ID:
+    raise ValueError('WIDGET_ID is not set')
+
 
 JWT_ALGORITHM = 'HS256'
-widgetId = ''
 
 now = datetime.now(timezone.utc)
 payload = {
-'sub': widgetId, # don't add single quotes, such as 'widgetId'
+'sub': WIDGET_ID, # don't add single quotes, such as 'widgetId'
 'iat': now,
 'exp': now + timedelta(days=30),
 'token_user': 'usak'

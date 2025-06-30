@@ -21,7 +21,8 @@ payload = {
 'sub': WIDGET_ID, # don't add single quotes, such as 'widgetId'
 'iat': now,
 'exp': now + timedelta(days=30),
-'token_user': 'usak'
+'segmentAttributes': {"connect:Subtype": {"ValueString" : "connect:Guide"}}, 
+'attributes': {"name": "Jane", "memberID": "123456789", "email": "Jane@example.com", "isPremiumUser": "true", "age": "45"}
 }
 
 header = {
